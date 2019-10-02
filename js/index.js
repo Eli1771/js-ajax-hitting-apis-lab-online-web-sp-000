@@ -39,9 +39,11 @@ function getCommits(el) {
 function displayCommits() {
   let commits = JSON.parse(this.responseText);
   
-  let commitList = '<ul>' + commits.map(commit => {
-      
-    }).join('') + '</ul>';
+  let commitList = '<ul>' + 
+    commits.map(commit => {
+      return ``
+    }).join('') 
+  + '</ul>';
 }
 
 function getBranches() {
