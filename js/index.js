@@ -52,6 +52,8 @@ function displayCommits() {
 
 function getBranches() {
   const req = new XMLHttpRequest();
+  const ownerName = el.dataset.username;
+  const repoName = el.dataset.repository;
   
   req.addEventListener('load', displayBranches);
   req.open();
