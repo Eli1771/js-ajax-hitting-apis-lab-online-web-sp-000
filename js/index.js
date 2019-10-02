@@ -30,7 +30,9 @@ function getCommits() {
   const req = new XMLHttpRequest();
   
   req.addEventListener('load', displayCommits);
-  req.open('GET')
+  req.open('GET');
+  //GET /repos/:owner/:repo/commits
+
 }
 
 function displayCommits() {
