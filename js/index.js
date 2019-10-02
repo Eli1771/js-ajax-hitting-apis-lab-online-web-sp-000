@@ -48,6 +48,8 @@ function displayCommits() {
       </li>`
     }).join('') 
   + '</ul>';
+  
+  document.querySelector('#details').innerHTML = commitList;
 }
 
 function getBranches() {
