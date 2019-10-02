@@ -70,4 +70,6 @@ function displayBranches(el) {
       </li>`
     }).join('');
   + '</li>';
+  
+  document.querySelector('#details').innerHTML = branchList;
 }
