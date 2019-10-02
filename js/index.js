@@ -29,6 +29,8 @@ function displayRepositories() {
 function getCommits() {
   const req = new XMLHttpRequest();
   
+  req.addEventListener('load', displayCommits);
+  req.open('GET')
 }
 
 function displayCommits() {
