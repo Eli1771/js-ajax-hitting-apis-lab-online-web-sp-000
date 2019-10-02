@@ -55,7 +55,7 @@ function getBranches() {
   
   req.addEventListener('load', displayBranches);
   req.open();
-  
+  req.send();
 }
 
 function displayBranches() {
