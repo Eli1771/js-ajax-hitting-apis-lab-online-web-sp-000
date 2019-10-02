@@ -42,8 +42,8 @@ function displayCommits() {
   let commitList = `<ul>${
     commits.map(commit => {
       
-    });
-  }
+    }).join('');
+  }</ul>`;
 }
 
 function getBranches() {
