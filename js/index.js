@@ -26,7 +26,7 @@ function displayRepositories() {
   document.querySelector('div#repositories').innerHTML = repoList;
 }
 
-function getCommits() {
+function getCommits(el) {
   const req = new XMLHttpRequest();
   const ownerName;
   const repoName;
