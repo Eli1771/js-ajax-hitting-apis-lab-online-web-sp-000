@@ -64,6 +64,10 @@ function displayBranches(el) {
   let branches = JSON.parse(this.responseText);
   
   let branchList = '<li>' + 
-  
+    branches.map(branch => {
+      `<li>
+        <h3>${branch.}</h3>
+      </li>`
+    }).join('');
   + '</li>';
 }
