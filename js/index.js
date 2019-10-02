@@ -33,7 +33,7 @@ function getCommits(el) {
   
   req.addEventListener('load', displayCommits);
   req.open('GET', `https://api.github.com/repos/${ownerName}/${repoName}/commits`);
-  //GET /repos/:owner/:repo/commits
+  
 
 }
 
