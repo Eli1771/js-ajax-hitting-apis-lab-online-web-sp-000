@@ -58,6 +58,6 @@ function getBranches() {
   req.send();
 }
 
-function displayBranches() {
+function displayBranches(el) {
   
 }
