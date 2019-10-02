@@ -50,7 +50,7 @@ function displayCommits() {
   document.querySelector('#details').innerHTML = commitList;
 }
 
-function getBranches() {
+function getBranches(eli) {
   const req = new XMLHttpRequest();
   const ownerName = el.dataset.username;
   const repoName = el.dataset.repository;
@@ -60,7 +60,7 @@ function getBranches() {
   req.send();
 }
 
-function displayBranches(el) {
+function displayBranches() {
   let branches = JSON.parse(this.responseText);
   
   let branchList = '<li>' + 
