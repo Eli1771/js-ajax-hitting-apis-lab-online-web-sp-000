@@ -12,8 +12,7 @@ function getRepositories() {
 
 function displayRepositories() {
   let repos = JSON.parse(this.responseText);
-  console.log(repos);
-  
+
   let repoList = `<ul>
     ${repos.map(repo => {
       return `<li>
@@ -38,6 +37,8 @@ function getCommits(el) {
 }
 
 function displayCommits() {
+  let commits = JSON.parse(this.responseText);
+  
   
 }
 
