@@ -61,5 +61,9 @@ function getBranches() {
 }
 
 function displayBranches(el) {
+  let branches = JSON.parse(this.responseText);
   
+  let branchList = '<li>' + 
+  
+  + '</li>';
 }
