@@ -41,7 +41,7 @@ function displayCommits() {
   
   let commitList = '<ul>' + 
     commits.map(commit => {
-      return ``
+      return commit
     }).join('') 
   + '</ul>';
 }
