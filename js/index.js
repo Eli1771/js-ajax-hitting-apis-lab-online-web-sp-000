@@ -53,7 +53,7 @@ function displayCommits() {
 function getBranches() {
   const req = new XMLHttpRequest();
   
-  req.addEventListener('load', displayBranches);
+  req.addEventListener('load', displayBranches(this));
   req.open();
   req.send();
 }
