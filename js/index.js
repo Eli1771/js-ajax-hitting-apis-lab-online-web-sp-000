@@ -28,9 +28,11 @@ function displayRepositories() {
 
 function getCommits() {
   const req = new XMLHttpRequest();
+  const ownerName;
+  const repoName;
   
   req.addEventListener('load', displayCommits);
-  req.open('GET');
+  req.open('GET', 'https://api.github.com/repos/');
   //GET /repos/:owner/:repo/commits
 
 }
