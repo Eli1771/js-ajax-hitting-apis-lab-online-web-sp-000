@@ -56,7 +56,7 @@ function getBranches(el) {
   const repoName = el.dataset.repository;
   
   req.addEventListener('load', displayBranches);
-  req.open('GET', `https:api.github.com/repos/${ownerName}/${repoName}/branches`);
+  req.open('GET', `https://api.github.com/repos/${ownerName}/${repoName}/branches`);
   req.send();
 }
 
