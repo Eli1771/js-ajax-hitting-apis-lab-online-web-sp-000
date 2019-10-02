@@ -65,7 +65,7 @@ function displayBranches() {
   
   let branchList = '<li>' + 
     branches.map(branch => {
-      `<li>
+      return `<li>
         <h3>${branch.name}</h3>
       </li>`
     }).join('');
