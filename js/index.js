@@ -18,7 +18,7 @@ function displayRepositories() {
     ${repos.map(repo => {
       return `<li>
         <h2>${repo.html_url}</h2>
-        <a href="getCommits(); return false;">Show Commits</a>
+        <a href="getCommits(this); return false;">Show Commits</a>
         <a href="getBranches(); return false;">Show Branches</a>
       </li>`;
     }).join('')}
