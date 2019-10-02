@@ -44,7 +44,8 @@ function displayCommits() {
       return `<li>
         <h3>${commit.commit.author.name}</h3>
         <p>${commit.author.login}</p>
-        <p>${commit`
+        <p>${commit.commit.message}</p>
+      </li>`
     }).join('') 
   + '</ul>';
 }
