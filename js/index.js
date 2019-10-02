@@ -32,7 +32,7 @@ function getCommits(el) {
   const repoName = el.dataset.repository;
   
   req.addEventListener('load', displayCommits);
-  req.open('GET', 'https://api.github.com/repos/');
+  req.open('GET', `https://api.github.com/repos/${ownerName}/${repoName}`);
   //GET /repos/:owner/:repo/commits
 
 }
